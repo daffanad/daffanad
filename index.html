@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,17 +28,9 @@
             id="dragonEntity"
             gltf-model="#dragon"
             scale="1 1 1"
-            rotation="0 270 0"
             position="0.5 1.02 -0.7"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;"
             animation-mixer>
-            <!-- Animation to make the dragon orbit around the city -->
-            <a-animation
-                attribute="rotation"
-                dur="10000" <!-- Durasi animasi dalam milidetik -->
-                to="0 630 0" <!-- Rotasi yang diinginkan (jumlah putaran * 360) -->
-                easing="linear"
-                repeat="indefinite"> <!-- Mengulang animasi secara tak terbatas -->
-            </a-animation>
         </a-entity>
     </a-scene>
 </body>
