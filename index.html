@@ -12,13 +12,13 @@
         <!-- Asset Management System-->
         <a-assets>
             <a-asset-item id="logo" src="./assets/dragon/logo.gltf"></a-asset-item>
-            <a-asset-item id="city" src="./assets/city/pasca.gltf"></a-asset-item>
+            <a-asset-item id="pasca" src="./assets/city/pasca.gltf"></a-asset-item>
         </a-assets>
 
 
         <a-entity
-            id="kota"
-            gltf-model="#city"
+            id="pasca"
+            gltf-model="#pasca"
             rotation="0 -90 0"
             scale="0.0015 0.0015 0.0015"
             position=".07 1 -.5">
@@ -30,7 +30,7 @@
             gltf-model="#logo"
             scale="1 1 1"
             position="0.5 1.02 -0.7"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: ease"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: ease"
             animation-mixer>
         </a-entity>
     </a-scene>
