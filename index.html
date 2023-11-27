@@ -9,29 +9,25 @@
 </head>
 <body>
     <a-scene>
-        <!-- Asset Management System-->
-        <a-assets>
-            <a-asset-item id="dragon" src="./assets/dragon/scene.gltf"></a-asset-item>
-            <a-asset-item id="city" src="./assets/city/scene.gltf"></a-asset-item>
-        </a-assets>
-
-        <!-- City GLTF model -->
+        <!-- City GLTF model with Rotation Animation -->
         <a-entity
             gltf-model="#city"
             rotation="0 -90 0"
             scale="0.0005 0.0005 0.0005"
-            position=".07 1 -.5">
+            position=".07 1 -.5"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 20000; easing: linear;">
         </a-entity>
 
-        <!-- Dragon GLTF model -->
+        <!-- Dragon GLTF model with Rotation Animation -->
         <a-entity
             id="dragonEntity"
             gltf-model="#dragon"
             scale="1 1 1"
             position="0.5 1.02 -0.7"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear;"
             animation-mixer>
         </a-entity>
     </a-scene>
+
 </body>
 </html>
