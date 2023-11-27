@@ -15,7 +15,7 @@
             <a-asset-item id="city" src="./assets/city/pasca.gltf"></a-asset-item>
         </a-assets>
 
-        <!-- City GLTF model -->
+
         <a-entity
             id="kota"
             gltf-model="#city"
@@ -24,13 +24,13 @@
             position=".07 1 -.5">
         </a-entity>
 
-        <!-- Dragon GLTF model -->
+    
         <a-entity
             id="logo"
             gltf-model="#logo"
             scale="1 1 1"
             position="0.5 1.02 -0.7"
-            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: ease"
             animation-mixer>
         </a-entity>
     </a-scene>
