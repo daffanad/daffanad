@@ -11,7 +11,7 @@
     <a-scene>
         <!-- Asset Management System-->
         <a-assets>
-            <a-asset-item id="dragon" src="./assets/dragon/scene.gltf"></a-asset-item>
+            <a-asset-item id="logo" src="./assets/dragon/logo.gltf"></a-asset-item>
             <a-asset-item id="city" src="./assets/city/pasca.gltf"></a-asset-item>
         </a-assets>
 
@@ -26,11 +26,11 @@
 
         <!-- Dragon GLTF model -->
         <a-entity
-            id="dragonEntity"
-            gltf-model="#dragon"
+            id="logo"
+            gltf-model="#logo"
             scale="1 1 1"
             position="0.5 1.02 -0.7"
-            animation="property: rotation; to: 0 180 0; loop: true; dur: 10000; easing: linear;"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear"
             animation-mixer>
         </a-entity>
     </a-scene>
